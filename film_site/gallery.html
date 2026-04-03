@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея | Имя в протоколе</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; background: #0a0a0a; color: #e0e0e0; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        .navbar { position: fixed; top: 0; width: 100%; background: rgba(10,10,10,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(180,50,50,0.4); z-index: 1000; padding: 18px 0; }
+        .nav-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .logo { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; }
+        .logo-accent { color: #b33a3a; }
+        .nav-menu { display: flex; gap: 28px; list-style: none; flex-wrap: wrap; }
+        .nav-menu a { color: #ccc; text-decoration: none; font-weight: 500; transition: 0.2s; }
+        .nav-menu a:hover, .nav-menu a.active { color: #b33a3a; }
+        .page-content { padding: 140px 0 80px; }
+        .page-header { margin-bottom: 48px; border-left: 4px solid #b33a3a; padding-left: 24px; }
+        .page-header h1 { font-family: 'Playfair Display', serif; font-size: 2.8rem; font-weight: 800; margin-bottom: 12px; }
+        .page-subtitle { color: #888; font-size: 1rem; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px; margin-bottom: 48px; }
+        .gallery-card { background: #0c0c0c; border-radius: 20px; overflow: hidden; border: 1px solid #1e1e1e; transition: 0.2s; }
+        .gallery-card:hover { border-color: #b33a3a; transform: translateY(-4px); }
+        .gallery-image { height: 220px; background: linear-gradient(135deg, #1a1a1a, #080808); display: flex; align-items: center; justify-content: center; font-size: 3rem; }
+        .gallery-info { padding: 20px; }
+        .gallery-info h3 { font-size: 1.2rem; margin-bottom: 8px; font-family: 'Playfair Display', serif; }
+        .gallery-info p { color: #888; font-size: 0.85rem; }
+        .poster-section { background: #0c0c0c; border-radius: 24px; padding: 40px; text-align: center; border: 1px solid #1e1e1e; margin-top: 20px; }
+        .poster-section h2 { color: #b33a3a; margin-bottom: 24px; font-family: 'Playfair Display', serif; }
+        .poster-demo { max-width: 300px; margin: 0 auto; background: #050505; padding: 32px; border-radius: 20px; border: 1px solid #2a2a2a; }
+        .poster-demo-title { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 800; margin-bottom: 12px; }
+        .poster-demo-tagline { font-size: 0.7rem; letter-spacing: 2px; color: #b33a3a; margin-bottom: 20px; }
+        .footer { background: #010101; padding: 48px 0; text-align: center; border-top: 1px solid #1a1a1a; font-size: 0.8rem; color: #666; }
+        @media (max-width: 768px) {
+            .nav-inner { flex-direction: column; }
+            .nav-menu { justify-content: center; gap: 16px; }
+            .page-header h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-inner">
+                <div class="logo"><span class="logo-accent">ИМЯ В</span> ПРОТОКОЛЕ</div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О фильме</a></li>
+                    <li><a href="heroes.html">Герои</a></li>
+                    <li><a href="plot.html">Сюжет</a></li>
+                    <li><a href="scenes.html">Сцены</a></li>
+                    <li><a href="gallery.html" class="active">Галерея</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <div class="container">
+            <div class="page-header">
+                <h1>Галерея</h1>
+                <div class="page-subtitle">Кадры из фильма, портреты героев, постер</div>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-card">
+                    <div class="gallery-image">🏛️</div>
+                    <div class="gallery-info">
+                        <h3>Кадр 1: «Партийное собрание»</h3>
+                        <p>Актовый зал университета. Длинные столы, красная скатерть. Григорий стоит перед парткомом. В зале — его коллеги, которые сейчас будут его «разоблачать».</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-image">✉️</div>
+                    <div class="gallery-info">
+                        <h3>Кадр 2: «Донос»</h3>
+                        <p>Борис пишет донос на Григория. Его рука дрожит. Он знает, что предаёт друга, но страх сильнее. Свет лампы освещает только лист бумаги.</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-image">📝</div>
+                    <div class="gallery-info">
+                        <h3>Кадр 3: «Письмо сыну»</h3>
+                        <p>Григорий пишет письмо, которое никогда не отправит. В ящике стола — десятки таких писем. 26 лет ожидания.</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-image">🎖️</div>
+                    <div class="gallery-info">
+                        <h3>Портрет Григория (1945)</h3>
+                        <p>Молодой учёный, вернувшийся с фронта. В глазах — надежда. На гимнастёрке — орден Красной Звезды. Он ещё не знает, что его ждёт.</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-image">👔</div>
+                    <div class="gallery-info">
+                        <h3>Портрет Бориса (1965)</h3>
+                        <p>Успешный партийный функционер. Но в глазах — пустота. Он получил всё, что хотел, но потерял друга и уважение к себе.</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-image">🪦</div>
+                    <div class="gallery-info">
+                        <h3>Кадр 4: «Могила»</h3>
+                        <p>Снег, две фигуры у свежего холма. Вера и Леонид. Они молчат. На памятнике — надпись: «Его лекции запрещали при жизни».</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="poster-section">
+                <h2>Постер фильма</h2>
+                <div class="poster-demo">
+                    <div class="poster-demo-title">ИМЯ В<br>ПРОТОКОЛЕ</div>
+                    <div class="poster-demo-tagline">ИСТОРИЧЕСКАЯ ДРАМА</div>
+                    <div style="font-size: 0.7rem; color: #b33a3a;">1945–1991</div>
+                    <div style="margin-top: 20px; font-size: 0.8rem; font-style: italic;">«Его преступление — правда. Его наказание — тишина»</div>
+                </div>
+                <p style="margin-top: 24px; color: #888; font-size: 0.85rem;">Концепция постера: лицо Григория перечёркнуто красной полосой — символ партийного клейма. Чёрно-белая гамма отсылает к эпохе.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Кинопроект «Имя в протоколе». Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>

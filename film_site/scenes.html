@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ключевые сцены | Имя в протоколе</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; background: #0a0a0a; color: #e0e0e0; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        .navbar { position: fixed; top: 0; width: 100%; background: rgba(10,10,10,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(180,50,50,0.4); z-index: 1000; padding: 18px 0; }
+        .nav-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .logo { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; }
+        .logo-accent { color: #b33a3a; }
+        .nav-menu { display: flex; gap: 28px; list-style: none; flex-wrap: wrap; }
+        .nav-menu a { color: #ccc; text-decoration: none; font-weight: 500; transition: 0.2s; }
+        .nav-menu a:hover, .nav-menu a.active { color: #b33a3a; }
+        .page-content { padding: 140px 0 80px; }
+        .page-header { margin-bottom: 48px; border-left: 4px solid #b33a3a; padding-left: 24px; }
+        .page-header h1 { font-family: 'Playfair Display', serif; font-size: 2.8rem; font-weight: 800; margin-bottom: 12px; }
+        .page-subtitle { color: #888; font-size: 1rem; }
+        .scene-full { background: #0c0c0c; border-radius: 24px; padding: 40px; margin-bottom: 40px; border: 1px solid #1e1e1e; }
+        .scene-number { color: #b33a3a; font-size: 0.8rem; letter-spacing: 3px; margin-bottom: 12px; }
+        .scene-full-title { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; margin-bottom: 12px; }
+        .scene-location { color: #888; font-size: 0.85rem; margin-bottom: 24px; }
+        .scene-description p { margin-bottom: 20px; color: #bbb; line-height: 1.7; }
+        .scene-direction { background: #111; padding: 20px; border-radius: 16px; margin-top: 24px; border-left: 3px solid #b33a3a; font-style: italic; color: #aaa; }
+        .footer { background: #010101; padding: 48px 0; text-align: center; border-top: 1px solid #1a1a1a; font-size: 0.8rem; color: #666; }
+        @media (max-width: 768px) {
+            .nav-inner { flex-direction: column; }
+            .nav-menu { justify-content: center; gap: 16px; }
+            .page-header h1 { font-size: 2rem; }
+            .scene-full { padding: 24px; }
+            .scene-full-title { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-inner">
+                <div class="logo"><span class="logo-accent">ИМЯ В</span> ПРОТОКОЛЕ</div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О фильме</a></li>
+                    <li><a href="heroes.html">Герои</a></li>
+                    <li><a href="plot.html">Сюжет</a></li>
+                    <li><a href="scenes.html" class="active">Сцены</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <div class="container">
+            <div class="page-header">
+                <h1>Ключевые сцены</h1>
+                <div class="page-subtitle">Три самых важных момента фильма</div>
+            </div>
+
+            <div class="scene-full">
+                <div class="scene-number">СЦЕНА 1</div>
+                <h2 class="scene-full-title">«Партийное собрание»</h2>
+                <div class="scene-location">1952 год. Актовый зал университета, длинные столы, красная скатерть, портрет Сталина</div>
+                <div class="scene-description">
+                    <p>Григорий стоит перед парткомом. Ему зачитывают донос. В зале сидят его коллеги, друзья, бывшие студенты. Никто не смотрит в глаза.</p>
+                    <p><strong>Председатель:</strong> «Товарищ Сомов, вы признаёте, что ваши лекции имеют антисоветский характер?»</p>
+                    <p><strong>Григорий:</strong> «Я рассказываю правду. Правда не может быть антисоветской».</p>
+                    <p><strong>Председатель:</strong> «Товарищи, кто хочет высказаться?»</p>
+                    <p>Один за другим коллеги встают и говорят: «Поддерживаю», «Разоблачаю», «Требую исключить». Борис говорит громче всех. Григорий смотрит на Бориса. Их взгляды встречаются. Борис отводит глаза.</p>
+                </div>
+                <div class="scene-direction"><strong>Режиссёрское решение:</strong> Сцена снята длинными планами, без монтажа. Камера медленно движется по лицам выступающих. Зритель видит, как трудно им говорить, но они всё равно говорят.</div>
+            </div>
+
+            <div class="scene-full">
+                <div class="scene-number">СЦЕНА 2</div>
+                <h2 class="scene-full-title">«Письмо сыну»</h2>
+                <div class="scene-location">1965 год. Комната в коммуналке, стол, чернильница, лампа</div>
+                <div class="scene-description">
+                    <p>Григорий пишет письмо Леониду, который уехал в другой город, чтобы его не ассоциировали с «врагом народа». Григорий не отправляет письмо. Он кладёт его в ящик стола. В ящике уже десятки таких писем.</p>
+                    <p><em>Голос за кадром (Григорий читает письмо):</em> «Лёня, я знаю, что ты меня стыдишься. Я не виню тебя. Ты хочешь жить нормально, служить, иметь семью. Я когда-то тоже так хотел. Но если бы я молчал, кто бы говорил правду? Может, я наивный. Может, зря. Но я не могу иначе. Прости меня, сын. Или не прощай. Я пойму».</p>
+                    <p>Камера медленно отъезжает от стола, показывает пустую комнату, старые обои, портрет жены на стене.</p>
+                </div>
+                <div class="scene-direction"><strong>Режиссёрское решение:</strong> Сцена чёрно-белая, с зернистостью, имитирующей плёнку 1960-х. Нет музыки, только звук пера по бумаге и тишина.</div>
+            </div>
+
+            <div class="scene-full">
+                <div class="scene-number">СЦЕНА 3</div>
+                <h2 class="scene-full-title">«Могила»</h2>
+                <div class="scene-location">1991 год. Кладбище, поздняя осень, идёт снег</div>
+                <div class="scene-description">
+                    <p>Вера и Леонид стоят у свежей могилы Григория. Они не разговаривали много лет. Леонид в военной форме.</p>
+                    <p><strong>Вера:</strong> «Он ждал тебя. Всё время ждал».</p>
+                    <p><strong>Леонид:</strong> «Я знаю».</p>
+                    <p><strong>Вера:</strong> «Он говорил, что ты вернёшься. Когда его исключали из партии, он сказал: "Лёня вернётся. Просто ему нужно время". Ему дали 26 лет. Он ждал 26 лет».</p>
+                    <p>Леонид кладёт на могилу комсомольский значок — тот самый, который у него отобрали в 1958 году.</p>
+                    <p><strong>Леонид:</strong> «Я всё это время думал, что он виноват. Что если бы он просто молчал, у нас всё было бы хорошо. А теперь я понимаю: если бы он молчал, я бы вырос трусом».</p>
+                    <p>Вера берёт его за руку. Они уходят. Камера остаётся на могиле. Снег падает на свежую землю. Надпись на памятнике крупным планом: <em>«Историк Григорий Петрович Сомов. 1910–1991. Его лекции запрещали при жизни»</em>.</p>
+                </div>
+                <div class="scene-direction"><strong>Режиссёрское решение:</strong> Чёрно-белая гамма, снег, полная тишина. Финальный кадр держится 10 секунд.</div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Кинопроект «Имя в протоколе». Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>

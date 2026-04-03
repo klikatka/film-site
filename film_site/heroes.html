@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Герои | Имя в протоколе</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; background: #0a0a0a; color: #e0e0e0; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        .navbar { position: fixed; top: 0; width: 100%; background: rgba(10,10,10,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(180,50,50,0.4); z-index: 1000; padding: 18px 0; }
+        .nav-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .logo { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; }
+        .logo-accent { color: #b33a3a; }
+        .nav-menu { display: flex; gap: 28px; list-style: none; flex-wrap: wrap; }
+        .nav-menu a { color: #ccc; text-decoration: none; font-weight: 500; transition: 0.2s; }
+        .nav-menu a:hover, .nav-menu a.active { color: #b33a3a; }
+        .page-content { padding: 140px 0 80px; }
+        .page-header { margin-bottom: 48px; border-left: 4px solid #b33a3a; padding-left: 24px; }
+        .page-header h1 { font-family: 'Playfair Display', serif; font-size: 2.8rem; font-weight: 800; margin-bottom: 12px; }
+        .page-subtitle { color: #888; font-size: 1rem; }
+        .heroes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px; }
+        .hero-card { background: #0c0c0c; border-radius: 24px; padding: 28px; border: 1px solid #1e1e1e; transition: 0.2s; }
+        .hero-card:hover { border-color: #b33a3a; transform: translateY(-4px); }
+        .hero-photo { width: 100%; height: 200px; background: linear-gradient(135deg, #1a1a1a, #050505); border-radius: 16px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; font-size: 3rem; font-weight: 800; color: #b33a3a; border: 1px solid #2a2a2a; font-family: 'Playfair Display', serif; }
+        .hero-name { font-size: 1.6rem; font-weight: 700; margin-bottom: 8px; font-family: 'Playfair Display', serif; }
+        .hero-age { color: #888; font-size: 0.85rem; margin-bottom: 8px; }
+        .hero-role { color: #b33a3a; font-weight: 600; margin-bottom: 20px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; }
+        .hero-desc p { margin-bottom: 12px; color: #bbb; font-size: 0.9rem; line-height: 1.6; }
+        .footer { background: #010101; padding: 48px 0; text-align: center; border-top: 1px solid #1a1a1a; font-size: 0.8rem; color: #666; }
+        @media (max-width: 768px) {
+            .nav-inner { flex-direction: column; }
+            .nav-menu { justify-content: center; gap: 16px; }
+            .page-header h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-inner">
+                <div class="logo"><span class="logo-accent">ИМЯ В</span> ПРОТОКОЛЕ</div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О фильме</a></li>
+                    <li><a href="heroes.html" class="active">Герои</a></li>
+                    <li><a href="plot.html">Сюжет</a></li>
+                    <li><a href="scenes.html">Сцены</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <div class="container">
+            <div class="page-header">
+                <h1>Герои</h1>
+                <div class="page-subtitle">Четыре судьбы на фоне эпохи</div>
+            </div>
+
+            <div class="heroes-grid">
+                <div class="hero-card">
+                    <div class="hero-photo">Г</div>
+                    <h2 class="hero-name">Григорий Сомов</h2>
+                    <div class="hero-age">1910–1991 | Учёный-историк</div>
+                    <div class="hero-role">Жертва системы</div>
+                    <div class="hero-desc">
+                        <p><strong>Характер:</strong> Принципиальный, честный, верит в правду. Вернулся с фронта с надеждой строить новую жизнь.</p>
+                        <p><strong>В сюжете:</strong> Читает лекции о правде истории. Коллеги пишут донос. Его исключают из партии, увольняют, он теряет семью. 46 лет он ждёт восстановления справедливости.</p>
+                        <p><strong>Изменение:</strong> От наивного оптимиста до человека, который научился молчать, но так и не научился врать.</p>
+                    </div>
+                </div>
+
+                <div class="hero-card">
+                    <div class="hero-photo">Б</div>
+                    <h2 class="hero-name">Борис Зайцев</h2>
+                    <div class="hero-age">1905–? | Партийный функционер</div>
+                    <div class="hero-role">Тот, кто написал донос</div>
+                    <div class="hero-desc">
+                        <p><strong>Характер:</strong> Карьерист, завистливый, трусливый. Друг Григория, который предаёт его из страха и карьерных соображений.</p>
+                        <p><strong>В сюжете:</strong> Пишет первый донос на Григория. Участвует в партийных собраниях. В 1991 году остаётся один — дети отвернулись, партии больше нет.</p>
+                        <p><strong>Изменение:</strong> От успешного функционера до одинокого старика, который понимает, что променял дружбу на власть, которая исчезла.</p>
+                    </div>
+                </div>
+
+                <div class="hero-card">
+                    <div class="hero-photo">В</div>
+                    <h2 class="hero-name">Вера Сомова</h2>
+                    <div class="hero-age">1915–? | Учительница, жена Григория</div>
+                    <div class="hero-role">Та, кто ушла</div>
+                    <div class="hero-desc">
+                        <p><strong>Характер:</strong> Любящая, но слабая. Хочет сохранить семью, но давление системы оказывается сильнее.</p>
+                        <p><strong>В сюжете:</strong> Её вызывают в райком, предлагают развестись с мужем, чтобы сохранить работу. В 1960-е она уходит. В 1991 году приходит на могилу Григория.</p>
+                        <p><strong>Изменение:</strong> От преданной жены до женщины, которая выбирает выживание, а затем — до раскаяния, которое приходит слишком поздно.</p>
+                    </div>
+                </div>
+
+                <div class="hero-card">
+                    <div class="hero-photo">Л</div>
+                    <h2 class="hero-name">Леонид Сомов</h2>
+                    <div class="hero-age">1930–? | Сын Григория, военный</div>
+                    <div class="hero-role">Тот, кто ненавидел отца</div>
+                    <div class="hero-desc">
+                        <p><strong>Характер:</strong> Амбициозный, мечтает о карьере. Стыдится отца-«врага народа».</p>
+                        <p><strong>В сюжете:</strong> Его исключают из комсомола. Он уезжает, меняет фамилию, становится генералом. В 1991 году приходит к умирающему отцу просить прощения.</p>
+                        <p><strong>Изменение:</strong> От ненависти к отцу до понимания, что отец был прав, а он, Леонид, променял правду на карьеру.</p>
+                    </div>
+                </div>
+
+                <div class="hero-card">
+                    <div class="hero-photo">А</div>
+                    <h2 class="hero-name">Анна Петровна</h2>
+                    <div class="hero-age">1895–? | Соседка</div>
+                    <div class="hero-role">Та, кто «сдала»</div>
+                    <div class="hero-desc">
+                        <p><strong>Характер:</strong> Идейная, верит, что «помогает стране». Пишет доносы из убеждений.</p>
+                        <p><strong>В сюжете:</strong> Следит за Сомовыми, пишет в КГБ. В 1991 году, в 96 лет, остаётся одна — никто не навещает «стукачку».</p>
+                        <p><strong>Изменение:</strong> От уверенности в своей правоте до одиночества, которое она не может объяснить.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Кинопроект «Имя в протоколе». Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>

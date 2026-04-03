@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О фильме | Имя в протоколе</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; background: #0a0a0a; color: #e0e0e0; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        .navbar { position: fixed; top: 0; width: 100%; background: rgba(10,10,10,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(180,50,50,0.4); z-index: 1000; padding: 18px 0; }
+        .nav-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .logo { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; }
+        .logo-accent { color: #b33a3a; }
+        .nav-menu { display: flex; gap: 28px; list-style: none; flex-wrap: wrap; }
+        .nav-menu a { color: #ccc; text-decoration: none; font-weight: 500; transition: 0.2s; }
+        .nav-menu a:hover, .nav-menu a.active { color: #b33a3a; }
+        .page-content { padding: 140px 0 80px; }
+        .page-header { margin-bottom: 48px; border-left: 4px solid #b33a3a; padding-left: 24px; }
+        .page-header h1 { font-family: 'Playfair Display', serif; font-size: 2.8rem; font-weight: 800; margin-bottom: 12px; }
+        .page-subtitle { color: #888; font-size: 1rem; }
+        .info-block { background: #0c0c0c; border-radius: 20px; padding: 32px; margin-bottom: 32px; border: 1px solid #1e1e1e; }
+        .info-block h2 { color: #b33a3a; font-size: 1.5rem; margin-bottom: 20px; font-family: 'Playfair Display', serif; }
+        .info-block p { margin-bottom: 16px; color: #bbb; line-height: 1.7; }
+        .footer { background: #010101; padding: 48px 0; text-align: center; border-top: 1px solid #1a1a1a; font-size: 0.8rem; color: #666; }
+        @media (max-width: 768px) {
+            .nav-inner { flex-direction: column; }
+            .nav-menu { justify-content: center; gap: 16px; }
+            .page-header h1 { font-size: 2rem; }
+            .info-block { padding: 24px; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-inner">
+                <div class="logo"><span class="logo-accent">ИМЯ В</span> ПРОТОКОЛЕ</div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html" class="active">О фильме</a></li>
+                    <li><a href="heroes.html">Герои</a></li>
+                    <li><a href="plot.html">Сюжет</a></li>
+                    <li><a href="scenes.html">Сцены</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <div class="container">
+            <div class="page-header">
+                <h1>О фильме</h1>
+                <div class="page-subtitle">1945–1991. История одного доноса</div>
+            </div>
+
+            <div class="info-block">
+                <h2>Название</h2>
+                <p><strong>«Имя в протоколе»</strong> — фраза, которая в советское время означала приговор. Если твоё имя попадало в протокол партийного собрания или донос в КГБ — жизнь могла быть разрушена навсегда. Название фильма — метафора судьбы человека, который стал «делом» в папке.</p>
+            </div>
+
+            <div class="info-block">
+                <h2>Жанр</h2>
+                <p>Историческая драма / Социальный триллер. Фильм охватывает 46 лет — от окончания Великой Отечественной войны до распада СССР. Мы показываем не просто историю одного человека, а эпоху, где общественное мнение было оружием страшнее пули.</p>
+            </div>
+
+            <div class="info-block">
+                <h2>Главная тема</h2>
+                <p>Как один донос может уничтожить жизнь человека на десятилетия. Фильм исследует механизмы общественного резонанса в советскую эпоху: партийные собрания, комсомольские исключения, травля «врагов народа». Мы показываем, что «отмена» человека — не изобретение интернета, а давно отработанная технология.</p>
+                <p>Кто несёт ответственность? Тот, кто написал донос? Тот, кто публично поддержал травлю на собрании? Или тот, кто промолчал, когда мог сказать правду?</p>
+            </div>
+
+            <div class="info-block">
+                <h2>Актуальность</h2>
+                <p>Сегодня мы видим те же механизмы в социальных сетях. Донос превратился в пост. Партийное собрание — в комментарии под постом. Исключение из партии — в «отмену». Наш фильм — мост между прошлым и настоящим. Он показывает, что общественный резонанс всегда был и остаётся мощнейшим оружием.</p>
+                <p>Мы выбрали период 1945–1991, потому что это время, когда общественное мнение в СССР было инструментом государственной политики. Люди писали доносы на соседей, коллег, даже на близких — из страха, из карьерных соображений, иногда из искренней веры в правоту системы.</p>
+            </div>
+
+            <div class="info-block">
+                <h2>Почему выбран именно такой сюжет</h2>
+                <p>Мы не хотели делать фильм про «злого следователя» или «большую машину репрессий». Наш сюжет — про обычных людей, которые становятся частью системы. Коллега, который пишет донос из зависти. Студент, который отворачивается от учителя, чтобы сохранить комсомольский билет. Жена, которая уходит, чтобы спасти себя.</p>
+                <p>Этот сюжет важен, потому что он показывает: жертвой может стать любой. И любой может оказаться на месте палача — даже не желая зла, просто промолчав.</p>
+            </div>
+
+            <div class="info-block">
+                <h2>Целевая аудитория</h2>
+                <p>Фильм рассчитан на зрителей от 16 лет — молодёжь, которая сегодня сталкивается с травлей в соцсетях, и старшее поколение, которое помнит, как «имя в протоколе» меняло судьбы. Это история для всех, кто задумывается о цене правды и цене молчания.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Кинопроект «Имя в протоколе». Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
